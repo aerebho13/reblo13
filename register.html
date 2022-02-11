@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/register.css">
+    <title>Registery</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand-title">The Pet Salon</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="register.html">Registery</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- create a form with the following inputs name,age,gender,breed,service,owner, contact-->
+    <div class="input-container">
+        <div class="form-body">
+            <h2 class="h2-1">Register a New Pet</h2>
+            <div class="form-control">
+                <input type="text" id="txtName" placeholder="Enter Pet Name">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtAge" placeholder="Enter the Age">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtGender" placeholder="Enter the Gender">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtBreed" placeholder="Enter the Breed">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtOwner" placeholder="Full Name">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtPhone" placeholder="Phone Number">
+            </div>
+            <div class="form-control">
+                <select class="select" id="selService">
+                    <option value="Pedicure">Pedicure</option>
+                    <option value="Shower/Cleaning">Shower/Cleaning</option>
+                    <option value="Grooming">Full Service Grooming</option>
+                </select>
+            </div>
+            <button class="btn-reg" onclick="register();">Register</button>
+        </div>
+        <div>
+            <input class="enter-name" type="text" id="txtSearch" placeholder="Enter a Name"><button onclick="searchPet();">Search</button>
+            <button id="btnClear" onclick="showPetsCards()">Clear</button>
+        </div>
+
+        <h2 class="pet-list-header" id="search-header">Pets List</h2>
+
+    </div>
+    <div id="petList" class="pets">
+
+    </div>
+
+    <div class="salon-info" id="salonInfo">
+
+    </div>
+<script src="scripts/register.js"></script>
+<script src="scripts/displayInfo.js"></script>
+</body>
+</html>
